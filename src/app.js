@@ -13,7 +13,7 @@ dotenv.config({
 const { connectToDb } = require("./config/database");
 
 const app = express();
-const allowedOrigins = (process.env.CORS_ORIGINS || "http://localhost:5173")
+const allowedOrigins = (process.env.CORS_ORIGIN || "http://localhost:5173")
   .split(",")
   .map((u) => u.trim());
 
